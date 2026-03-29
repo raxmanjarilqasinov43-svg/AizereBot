@@ -5,8 +5,8 @@ from aiogram.filters import Command
 import google.generativeai as genai
 
 # ТОКЕНДЕРДІ ОСЫ ЖЕРГЕ ЖАЗ (Қатесіз қой)
-API_TOKEN = 'СЕНІҢ_TELEGRAM_BOT_TOKEN'
-GEMINI_API_KEY = 'СЕНІҢ_GEMINI_API_KEY'
+API_TOKEN = '8591088414:AAGhXkXuEi9z5ZjegIjp48L5wbTFTdCdTsA'
+GEMINI_API_KEY = 'AIzaSyB__FjAvItHsLw_YJ8Meifv9-0TPm8Dw5U'
 
 # Gemini-ді баптау
 genai.configure(api_key=GEMINI_API_KEY)
