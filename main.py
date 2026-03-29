@@ -77,4 +77,19 @@ async def main():
         await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+   # main.py файлының ең астына, asyncio.run(main()) алдына қой:
+from threading import Thread
+from flask import Flask
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Бот жұмыс істеп тұр!"
+
+def run_web():
+    app.run(host='0.0.0.0', port=8080)
+
+# main функциясының ішінде немесе алдында іске қос:
+Thread(target=run_web).start()
+ asyncio.run(main())
