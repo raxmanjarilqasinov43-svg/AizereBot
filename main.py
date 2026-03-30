@@ -20,8 +20,8 @@ def run_web():
     app.run(host='0.0.0.0', port=port)
 
 # 2. БОТТЫҢ НЕГІЗГІ КОДЫ
-API_TOKEN = os.getenv('BOT_TOKEN')
-GEMINI_API_KEY = os.getenv('GEMINI_KEY')
+API_TOKEN = os.getenv('8591088414:AAGhXkXuEi9z5ZjegIjp48L5wbTFTdCdTsA')
+GEMINI_API_KEY = os.getenv('AIzaSyAyVPWHmrQ1_U5DhIcL8wSweebMGLLS1RU')
 
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
